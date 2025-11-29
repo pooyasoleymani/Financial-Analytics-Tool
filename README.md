@@ -1,4 +1,6 @@
-# MyProject – Cross‑Platform Financial Analytics Tool
+# Cross‑Platform Financial Analytics Tool
+
+![Build & Test](https://github.com/pooyasoleymani/Financial-Analytics-Tool/actions/workflows/ci.yml/badge.svg)
 
 ## Overview
 MyProject is a modular C++ application designed for **financial data analysis and visualization**.  
