@@ -13,8 +13,15 @@ target_include_directories(core PUBLIC include)
 add_executable(cli apps/cli_app.cpp)
 target_link_libraries(cli PRIVATE core)
 
-include(FetchContent)
 include(CTest)
+
+include(CPack)
+set(CPACK_GENERATOR "ZIP;TGZ")
+set(CPACK_PACKAGE_NAME "Financial-Analytics-Tool")
+set(CPACK_PACKAGE_VERSION "0.9.0")
+set(CPACK_PACKAGE_CONTACT "pooya@example.com")
+
+include(FetchContent)
 
 FetchContent_Declare(
 Catch2
@@ -24,6 +31,7 @@ GIT_TAG v3.5.2
 
 FetchContent_MakeAvailable(Catch2)
 
+
 option(BUILD_TESTS "Build tests" ON)
 if(BUILD_TESTS)
     enable_testing()
@@ -32,6 +40,7 @@ endif()
 
 option(BUILD_BENCHMARKS "Build benchmarks" ON)
 if(BUILD_BENCHMARKS)
+  add_subdirectory(externals/benchmark)
   add_executable(bench_core benchmarks/bench_core.cpp)
-  target_link_libraries(bench_core PRIVATE core benchmark::benchmark)
+  target_link_libraries(bench_core PRIVATE core benchmark)
 endif()
