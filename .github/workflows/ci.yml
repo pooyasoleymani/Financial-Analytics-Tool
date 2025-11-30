@@ -36,3 +36,6 @@ jobs:
 
       - name: Run tests
         run: ctest -C Release --test-dir build --output-on-failure
+
+      - name: Benchmark
+        run: ./benchmarks/bench_core
