@@ -3,7 +3,7 @@ name: Release Pipline
 on:
     push:
         tags:
-            - 'v1.0.0'
+            - 'v*.*.*'
 jobs:
     build-release:
         runs-on: windows-latest
