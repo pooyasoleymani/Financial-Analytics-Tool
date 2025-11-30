@@ -1,9 +1,11 @@
 # Cross‑Platform Financial Analytics Tool
 
 ![Build & Test](https://github.com/pooyasoleymani/Financial-Analytics-Tool/actions/workflows/ci.yml/badge.svg)
+![Docs](https://img.shields.io/badge/docs-online-blue?link=https://pooyasoleymani.github.io/Financial-Analytics-Tool/)
+
 
 ## Overview
-MyProject is a modular C++ application designed for **financial data analysis and visualization**.  
+Financial-Analytics-Tool is a modular C++ application designed for **financial data analysis and visualization**.  
 It demonstrates modern C++ practices including:
 - Modular CMake structure
 - Thread safety with `std::mutex` and `std::atomic`
