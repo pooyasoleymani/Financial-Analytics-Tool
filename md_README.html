@@ -72,8 +72,8 @@ $(function() {
   <div class="headertitle"><div class="title">Cross‑Platform Financial Analytics Tool</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> <img src="https://github.com/pooyasoleymani/Financial-Analytics-Tool/actions/workflows/ci.yml/badge.svg" alt="Build & Test" style="pointer-events: none;" class="inline"/><img src="https://img.shields.io/badge/docs-online-blue?link=https://pooyasoleymani.github.io/Financial-Analytics-Tool/" alt="Docs" class="inline"/><img src="https://img.shields.io/badge/benchmarks-passing-brightgreen" alt="Benchmarks" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md1"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md7"></a> <img src="https://github.com/pooyasoleymani/Financial-Analytics-Tool/actions/workflows/ci.yml/badge.svg" alt="Build & Test" style="pointer-events: none;" class="inline"/><img src="https://img.shields.io/badge/docs-online-blue?link=https://pooyasoleymani.github.io/Financial-Analytics-Tool/" alt="Docs" class="inline"/><img src="https://img.shields.io/badge/benchmarks-passing-brightgreen" alt="Benchmarks" class="inline"/> <img src="https://github.com/pooyasoleymani/Financial-Analytics-Tool/actions/workflows/ci.yml/badge.svg" alt="Build" style="pointer-events: none;" class="inline"/><img src="https://img.shields.io/github/v/release/pooyasoleymani/Financial-Analytics-Tool" alt="Release" class="inline"/><img src="https://img.shields.io/codecov/c/github/pooyasoleymani/Financial-Analytics-Tool" alt="Coverage" class="inline"/><img src="https://img.shields.io/badge/benchmarks-passing-brightgreen" alt="Benchmarks" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md8"></a>
 Overview</h1>
 <p>Financial-Analytics-Tool is a modular C++ application designed for <b>financial data analysis and visualization</b>. <br  />
  It demonstrates modern C++ practices including:</p><ul>
@@ -86,12 +86,19 @@ Overview</h1>
 <li>PyQt5 GUI for interactive reports</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 📂 Project Structure</h1>
-<p>MyProject/ ├── src/ # Core libraries ├── include/ # Public headers ├── apps/ # CLI and GUI applications ├── tests/ # Unit tests (Catch2) ├── benchmarks/ # Performance benchmarks └── CMakeLists.txt</p>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<p>MyProject/</p><ul>
+<li>├── src/ # Core libraries</li>
+<li>├── include/ # Public headers</li>
+<li>├── apps/ # CLI and GUI applications</li>
+<li>├── tests/ # Unit tests (Catch2)</li>
+<li>├── benchmarks/ # Performance benchmarks</li>
+<li>└── CMakeLists.txt</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md11"></a>
 ⚙️ Build Instructions</h1>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 Prerequisites</h2>
 <ul>
 <li>CMake ≥ 3.16</li>
@@ -100,22 +107,22 @@ Prerequisites</h2>
 <li>Google Benchmark (for performance)</li>
 <li>PyQt5 (for GUI)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md13"></a>
 Build</h2>
 <div class="fragment"><div class="line">mkdir build &amp;&amp; cd build</div>
 <div class="line">cmake .. -DBUILD_TESTS=ON -DCMAKE_BUILD_TYPE=Release</div>
 <div class="line">cmake --build .</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md14"></a>
 Running Tests</h2>
 <div class="fragment"><div class="line">ctest --output-on-failure</div>
 </div><!-- fragment --><ul>
 <li>Run only unit tests:</li>
 </ul>
 <div class="fragment"><div class="line">ctest -L unit</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md15"></a>
 Benchmarks</h2>
 <div class="fragment"><div class="line">./benchmarks/bench_core</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md9"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md16"></a>
 📦 Packaging</h2>
 <p>Generate installers with CPack:</p>
 <div class="fragment"><div class="line">cpack</div>

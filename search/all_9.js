@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tests_0',['Running Tests',['../md_README.html#autotoc_md7',1,'']]],
-  ['tool_1',['Cross‑Platform Financial Analytics Tool',['../md_README.html',1,'']]]
+  ['reporting_20issues_0',['Reporting Issues',['../md_CONTRIBUTING.html#autotoc_md6',1,'']]],
+  ['running_20tests_1',['Running Tests',['../md_README.html#autotoc_md14',1,'']]]
 ];

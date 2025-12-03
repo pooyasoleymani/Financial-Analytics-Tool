@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['overview_0',['Overview',['../md_README.html#autotoc_md1',1,'']]]
+  ['how_20to_20contribute_0',['How to Contribute',['../md_CONTRIBUTING.html#autotoc_md4',1,'']]]
 ];
