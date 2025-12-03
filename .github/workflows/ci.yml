@@ -31,6 +31,9 @@ jobs:
       - name: Configure
         run: cmake -S . -B build -DBUILD_TESTS=ON -DCMAKE_BUILD_TYPE=Release
 
+      - name: Run clang-format check
+        run: clang-format --dry-run --Werror src/*.cpp include/*.hpp
+
       - name: Build
         run: cmake --build build --config Release
 
