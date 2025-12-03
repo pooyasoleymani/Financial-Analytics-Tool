@@ -1,9 +1,14 @@
 # Cross‑Platform Financial Analytics Tool
 
-![Build & Test](https://github.com/pooyasoleymani/Financial-Analytics-Tool/actions/workflows/ci.yml/badge.svg)
+![Build & Test](https://github.com/pooyasoleymani/Financial-Analytics-Tool/actions/workflows/ci.yml/badge.svg)![Docs](https://img.shields.io/badge/docs-online-blue?link=https://pooyasoleymani.github.io/Financial-Analytics-Tool/)![Benchmarks](https://img.shields.io/badge/benchmarks-passing-brightgreen)
+![Build](https://github.com/pooyasoleymani/Financial-Analytics-Tool/actions/workflows/ci.yml/badge.svg)![Release](https://img.shields.io/github/v/release/pooyasoleymani/Financial-Analytics-Tool)![Coverage](https://img.shields.io/codecov/c/github/pooyasoleymani/Financial-Analytics-Tool)![Benchmarks](https://img.shields.io/badge/benchmarks-passing-brightgreen)
+
+
+
+
 
 ## Overview
-MyProject is a modular C++ application designed for **financial data analysis and visualization**.  
+Financial-Analytics-Tool is a modular C++ application designed for **financial data analysis and visualization**.  
 It demonstrates modern C++ practices including:
 - Modular CMake structure
 - Thread safety with `std::mutex` and `std::atomic`
@@ -17,12 +22,12 @@ It demonstrates modern C++ practices including:
 
 ## 📂 Project Structure
 MyProject/ 
-├── src/ # Core libraries 
-├── include/ # Public headers 
-├── apps/ # CLI and GUI applications 
-├── tests/ # Unit tests (Catch2) 
-├── benchmarks/ # Performance benchmarks 
-└── CMakeLists.txt
+- ├── src/ # Core libraries 
+- ├── include/ # Public headers 
+- ├── apps/ # CLI and GUI applications 
+- ├── tests/ # Unit tests (Catch2) 
+- ├── benchmarks/ # Performance benchmarks 
+- └── CMakeLists.txt
 
 
 ## ⚙️ Build Instructions
