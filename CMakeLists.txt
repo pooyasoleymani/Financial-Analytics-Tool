@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 
 project(Financial-Analytics-Tool VERSION 1.0.00 LANGUAGES CXX)
 
@@ -38,7 +38,7 @@ if(BUILD_TESTS)
     add_subdirectory(tests)
 endif()
 
-option(BUILD_BENCHMARKS "Build benchmarks" ON)
+option(BUILD_BENCHMARKS "Build benchmarks" OFF)
 if(BUILD_BENCHMARKS)
   add_subdirectory(externals/benchmark)
   add_executable(bench_core benchmarks/bench_core.cpp)
