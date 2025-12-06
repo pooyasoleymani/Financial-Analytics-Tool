@@ -24,6 +24,8 @@ jobs:
           sudo apt-get install -y cmake g++ catch2 || true
           brew update || true
           brew install cmake catch2 || true
+          sudo apt-get install -y gcovr || true 
+          brew install gcovr || true
 
       - name: Install dependencies (Windows)
         if: runner.os == 'Windows'
@@ -39,10 +41,7 @@ jobs:
         run: ctest -C Release --test-dir build --output-on-failure
       
       - name: Generate coverage report
-        run: |
-          sudo apt-get install -y gcovr || true 
-          brew install gcovr || true
-          gcovr -r . --xml -o coverage.xml
+        run: gcovr -r . --xml -o coverage.xml
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
