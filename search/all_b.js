@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['packaging_0',['📦 Packaging',['../md_README.html#autotoc_md19',1,'']]],
-  ['prerequisites_1',['Prerequisites',['../md_README.html#autotoc_md15',1,'']]],
-  ['project_20structure_2',['📂 Project Structure',['../md_README.html#autotoc_md13',1,'']]]
+  ['of_20conduct_0',['Code of Conduct',['../md_CODE__OF__CONDUCT.html',1,'']]],
+  ['our_20standards_1',['Our Standards',['../md_CODE__OF__CONDUCT.html#autotoc_md4',1,'']]],
+  ['overview_2',['Overview',['../md_README.html#autotoc_md12',1,'']]]
 ];

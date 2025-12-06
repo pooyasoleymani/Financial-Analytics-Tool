@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['tests_0',['Running Tests',['../md_README.html#autotoc_md17',1,'']]],
-  ['to_20contribute_1',['How to Contribute',['../md_CONTRIBUTING.html#autotoc_md7',1,'']]],
-  ['to_20financial_20analytics_20tool_2',['Contributing to Financial Analytics Tool',['../md_CONTRIBUTING.html',1,'']]],
-  ['tool_3',['tool',['../md_CONTRIBUTING.html',1,'Contributing to Financial Analytics Tool'],['../md_README.html',1,'Cross‑Platform Financial Analytics Tool']]]
+  ['standards_0',['standards',['../md_CONTRIBUTING.html#autotoc_md8',1,'Coding Standards'],['../md_CODE__OF__CONDUCT.html#autotoc_md4',1,'Our Standards']]],
+  ['structure_1',['📂 Project Structure',['../md_README.html#autotoc_md14',1,'']]]
 ];
