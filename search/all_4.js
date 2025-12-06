@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['financial_20analytics_20tool_0',['financial analytics tool',['../md_CONTRIBUTING.html',1,'Contributing to Financial Analytics Tool'],['../md_README.html',1,'Cross‑Platform Financial Analytics Tool']]]
+  ['benchmarks_0',['Benchmarks',['../md_README.html#autotoc_md18',1,'']]],
+  ['build_1',['Build',['../md_README.html#autotoc_md16',1,'']]],
+  ['build_20instructions_2',['⚙️ Build Instructions',['../md_README.html#autotoc_md14',1,'']]]
 ];

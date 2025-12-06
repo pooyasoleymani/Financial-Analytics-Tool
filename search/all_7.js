@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['of_20conduct_0',['Code of Conduct',['../md_CODE__OF__CONDUCT.html',1,'']]],
-  ['our_20standards_1',['Our Standards',['../md_CODE__OF__CONDUCT.html#autotoc_md1',1,'']]],
-  ['overview_2',['Overview',['../md_README.html#autotoc_md8',1,'']]]
+  ['financial_20analytics_20tool_0',['financial analytics tool',['../md_CONTRIBUTING.html',1,'Contributing to Financial Analytics Tool'],['../md_README.html',1,'Cross‑Platform Financial Analytics Tool']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['benchmarks_0',['Benchmarks',['../md_README.html#autotoc_md15',1,'']]],
-  ['build_1',['Build',['../md_README.html#autotoc_md13',1,'']]],
-  ['build_20instructions_2',['⚙️ Build Instructions',['../md_README.html#autotoc_md11',1,'']]]
+  ['1_200_200_202025_2012_2006_0',['[1.0.0] - 2025-12-06',['../md_CHANGELOG.html#autotoc_md1',1,'']]],
+  ['12_2006_1',['[1.0.0] - 2025-12-06',['../md_CHANGELOG.html#autotoc_md1',1,'']]]
 ];
