@@ -21,19 +21,19 @@ set(CPACK_PACKAGE_NAME "Financial-Analytics-Tool")
 set(CPACK_PACKAGE_VERSION "0.9.0")
 set(CPACK_PACKAGE_CONTACT "pooya@example.com")
 
-include(FetchContent)
+# include(FetchContent)
 
-FetchContent_Declare(
-Catch2
-GIT_REPOSITORY https://github.com/catchorg/Catch2.git
-GIT_TAG v3.5.2
-)
+# FetchContent_Declare(
+# Catch2
+# GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+# GIT_TAG v3.5.2
+# )
 
-FetchContent_MakeAvailable(Catch2)
-
+# FetchContent_MakeAvailable(Catch2)
 
 option(BUILD_TESTS "Build tests" ON)
 if(BUILD_TESTS)
+    add_subdirectory(externals/Catch2)
     enable_testing()
     add_subdirectory(tests)
 endif()

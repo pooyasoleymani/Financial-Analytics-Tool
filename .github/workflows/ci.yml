@@ -36,3 +36,14 @@ jobs:
 
       - name: Run tests
         run: ctest -C Release --test-dir build --output-on-failure
+      
+      - name: Generate coverage report
+        run: |
+          sudo apt-get install -y gcovr
+          gcovr -r . --xml -o coverage.xml
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: coverage.xml
+          token: ${{ secrets.CODECOV_TOKEN }}
