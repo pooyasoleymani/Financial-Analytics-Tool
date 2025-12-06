@@ -1,13 +1,16 @@
 #include <benchmark/benchmark.h>
 #include "analytics.hpp"
 
-static void BM_Add(benchmark::State& state)
+
+using namespace Analytics;
+
+static void BM_CalculatVAT(benchmark::State& state)
 {
     for (auto _: state)
     {
-        benchmark::DoNotOptimize(Add(2, 3));
+        benchmark::DoNotOptimize(CalculateVAT(2.0, 3.0));
     }
 }
 
-BENCHMARK(BM_Add);
+BENCHMARK(BM_CalculatVAT);
 BENCHMARK_MAIN();

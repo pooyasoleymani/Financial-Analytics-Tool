@@ -1,7 +1,9 @@
 #include <catch2/catch_test_macros.hpp>
 #include "analytics.hpp"
 
-TEST_CASE("addition test", "[core]")
+using namespace Analytics;
+
+TEST_CASE("Calculate VAT", "[core]")
 {
-    REQUIRE(Add(2, 3) == 5);
+    REQUIRE(CalculateVAT(2.0, 3.0) == 6.0);
 }

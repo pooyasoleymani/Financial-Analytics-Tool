@@ -34,3 +34,17 @@ if(BUILD_BENCHMARKS)
   add_executable(bench_core ${CMAKE_SOURCE_DIRURCE_DIR}/cpp_backend/benchmarks/bench_core.cpp)
   target_link_libraries(bench_core PRIVATE core benchmark)
 endif()
+
+add_subdirectory(${PROJECT_SOURCE_DIR}/cpp_backend/externals/pybind11)
+
+pybind11_add_module(
+  finanalytics 
+  ${PROJECT_SOURCE_DIR}/binding/pybind_module.cpp
+  ${PROJECT_SOURCE_DIR}/cpp_backend/src/analytics.cpp
+  )
+
+target_include_directories(
+  finanalytics PRIVATE 
+  ${PROJECT_SOURCE_DIR}/cpp_backend/include 
+  ${PROJECT_SOURCE_DIR}/cpp_backend/externals/pybind11/include
+  )

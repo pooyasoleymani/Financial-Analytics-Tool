@@ -43,3 +43,7 @@
 Test
 
 [Bb]uild
+*/venv
+*/.venv
+.venv
+.vscode

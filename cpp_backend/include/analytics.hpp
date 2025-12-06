@@ -1,4 +1,7 @@
 #pragma once
 #include <vector>
 
-int Add(int number_one , int number_two);
+namespace Analytics {
+  double CalculateVAT(double amount, double rate);
+  double Mean(const std::vector<double>& values);
+}

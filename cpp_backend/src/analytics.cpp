@@ -1,12 +1,20 @@
 #include "analytics.hpp"
 
 /**
- * @brief Add two integer number
- * @param a The first number
- * @param b The second number
- * @return The sum of two integerrs
+ * @brief Calculate VAT
+ * @param amount The amount
+ * @param rate The rate
+ * @return amount * rate
  **/
-int Add(int number_one , int number_two)
- {
-  return number_one + number_two ;
+namespace Analytics {
+  double CalculateVAT(double amount, double rate) {
+    return amount * rate;
 }
+
+    double Mean(const std::vector<double>& values) {
+      double sum = 0.0;
+      for (auto v : values) sum += v;
+      return values.empty() ? 0.0 : sum / values.size();
+    }
+};
+
