@@ -2,9 +2,9 @@ name: C++ CI
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ develop, main ]
   pull_request:
-    branches: [ develop ]
+    branches: [ develop, main ]
 
 jobs:
   build-and-test:
@@ -22,11 +22,16 @@ jobs:
         run: |
           sudo apt-get update || true
           sudo apt-get install -y cmake g++ catch2 || true
+          brew update || true
           brew install cmake catch2 || true
+          sudo apt-get install -y gcovr || true 
+          brew install gcovr || true
 
       - name: Install dependencies (Windows)
         if: runner.os == 'Windows'
-        run: choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System' -y
+        run: |
+          choco install cmake.install --installargs '"ADD_CMAKE_TO_PATH=System"' -y || true
+          pip install gcovr || true
 
       - name: Configure
         run: cmake -S . -B build -DBUILD_TESTS=ON -DCMAKE_BUILD_TYPE=Release
@@ -36,6 +41,12 @@ jobs:
 
       - name: Run tests
         run: ctest -C Release --test-dir build --output-on-failure
+      
+      - name: Generate coverage report
+        run: gcovr -r . --xml -o coverage.xml
 
-      - name: Benchmark
-        run: ./benchmarks/bench_core
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: coverage.xml
+          token: ${{ secrets.CODECOV_TOKEN }}
