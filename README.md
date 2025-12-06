@@ -1,7 +1,8 @@
 # Cross‑Platform Financial Analytics Tool
 
-![Build & Test](https://github.com/pooyasoleymani/Financial-Analytics-Tool/actions/workflows/ci.yml/badge.svg)! [Docs](https://img.shields.io/badge/docs-online-blue?link=https://pooyasoleymani.github.io/Financial-Analytics-Tool/)! [Benchmarks](https://img.shields.io/badge/benchmarks-passing-brightgreen)
- [Release](https://img.shields.io/github/v/release/pooyasoleymani/Financial-Analytics-Tool)! [Coverage](https://img.shields.io/codecov/c/github/pooyasoleymani/Financial-Analytics-Tool)! [Benchmarks](https://img.shields.io/badge/benchmarks-passing-brightgreen)
+![Build & Test](https://github.com/pooyasoleymani/Financial-Analytics-Tool/actions/workflows/ci.yml/badge.svg) ![Docs](https://img.shields.io/badge/docs-online-blue?link=https://pooyasoleymani.github.io/Financial-Analytics-Tool/) ![Benchmarks](https://img.shields.io/badge/benchmarks-passing-brightgreen)
+  ![Release](https://img.shields.io/github/v/release/pooyasoleymani/Financial-Analytics-Tool) ![Coverage](https://img.shields.io/codecov/c/github/pooyasoleymani/Financial-Analytics-Tool)
+ 
 
 
 
