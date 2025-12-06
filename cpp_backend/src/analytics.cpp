@@ -7,7 +7,7 @@
  * @param b The second number
  * @return The sum of two integerrs
  **/
-int add(int a , int b)
+int Add(int number_one , int number_two)
 {
-    return a + b;
+    return number_one + number_two;
 }

@@ -3,5 +3,5 @@
 
 TEST_CASE("addition test", "[core]")
 {
-    REQUIRE(add(2, 3) == 5);
+    REQUIRE(Add(2, 3) == 5);
 }

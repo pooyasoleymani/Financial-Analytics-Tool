@@ -1,4 +1,4 @@
 #pragma once
 #include <vector>
 
-int add(int a, int b);
+int Add(int number_one, int number_two);

@@ -29,7 +29,8 @@ jobs:
 
       - name: Install dependencies (Windows)
         if: runner.os == 'Windows'
-        run: choco install cmake.install --installargs '"ADD_CMAKE_TO_PATH=System"' -y
+        run: choco install cmake.install --installargs '"ADD_CMAKE_TO_PATH=System"' -y || true
+             pip install gcovr || true
 
       - name: Configure
         run: cmake -S . -B build -DBUILD_TESTS=ON -DCMAKE_BUILD_TYPE=Release
