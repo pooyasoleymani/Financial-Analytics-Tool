@@ -16,10 +16,12 @@ jobs:
         run: sudo apt-get install -y clang-format clang-tidy cppcheck
 
       - name: Run clang-format
-        run: clang-format --dry-run --Werror src/*.cpp include/*.hpp
+        run: clang-format --dry-run --Werror cpp_backend/src/*.cpp cpp_backend/include/*.hpp
 
       - name: Run clang-tidy
         run: clang-tidy src/*.cpp -- -Iinclude
 
       - name: Run cppcheck
         run: cppcheck --enable=all --inconclusive --quiet src include
+
+      
