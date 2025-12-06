@@ -1,3 +1,6 @@
 [submodule "externals/benchmark"]
 	path = externals/benchmark
 	url = https://github.com/google/benchmark
+[submodule "externals/Catch2"]
+	path = externals/Catch2
+	url = https://github.com/catchorg/Catch2
