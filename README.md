@@ -106,7 +106,5 @@ Generate installers with CPack:
 cpack
 ```
 - Windows → .zip or NSIS installer
-
 - Linux → .deb or .rpm
-
 - macOS → .dmg

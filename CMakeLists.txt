@@ -5,7 +5,7 @@ project(Financial-Analytics-Tool VERSION 1.0.00 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-option(BUILD_SHARED_LIBS "build shared library" OFF)
+option(BUILD_SHARED_LIBS "build shared library" ON)
 
 add_library(core ${CMAKE_SOURCE_DIR}/cpp_backend/src/analytics.cpp)
 target_include_directories(core PUBLIC ${CMAKE_SOURCE_DIR}/cpp_backend/include)
