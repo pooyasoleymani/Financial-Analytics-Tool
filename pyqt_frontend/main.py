@@ -1,7 +1,3 @@
-import sys
-
-sys.path.append("/home/pooya/Desktop/Financial-Analytics-Tool/pyqt_frontend/finanalytics.cpython-313-x86_64-linux-gnu.so")
-
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLineEdit, QLabel, QVBoxLayout, QWidget
 import finanalytics  # C++ backend module
 
@@ -43,6 +39,8 @@ class MainWindow(QMainWindow):
         self.result_label.setText(f"VAT Result: {vat:.2f}\n Mean Result: {mean}")
 
 if __name__ == "__main__":
+    import sys
+    
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()

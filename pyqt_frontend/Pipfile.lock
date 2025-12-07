@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b97f5aee0455482f32084a4c05bbc2fecab05254de6a5820cdc0a14676384b97"
+            "sha256": "5cb4fb0314ba600b8637a2d51eba49cbc340d5cb415a75c5fba7783a44a62525"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,15 @@
         ]
     },
     "default": {
+        "pybind11": {
+            "hashes": [
+                "sha256:9c0f40056a016da59bab516efb523089139fcc6f2ba7e4930854c61efb932051",
+                "sha256:aa8f0aa6e0a94d3b64adfc38f560f33f15e589be2175e103c0a33c6bce55ee89"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==3.0.1"
+        },
         "pyqt5": {
             "hashes": [
                 "sha256:6cd75628f6e732b1ffcfe709ab833a0716c0445d7aec8046a48d5843352becb6",
@@ -63,6 +72,15 @@
             ],
             "markers": "python_version >= '3.10'",
             "version": "==12.17.2"
+        },
+        "setuptools": {
+            "hashes": [
+                "sha256:062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922",
+                "sha256:f36b47402ecde768dbfafc46e8e4207b4360c654f1f3bb84475f0a28628fb19c"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.9'",
+            "version": "==80.9.0"
         }
     },
     "develop": {}

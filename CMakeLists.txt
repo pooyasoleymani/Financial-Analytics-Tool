@@ -50,3 +50,9 @@ target_include_directories(
   ${PROJECT_SOURCE_DIR}/cpp_backend/externals/pybind11/include
   )
 
+  add_custom_command(
+    TARGET finanalytics POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+    $<TARGET_FILE:finanalytics>
+    ${CMAKE_SOURCE_DIR}/pyqt_frontend/
+  )
