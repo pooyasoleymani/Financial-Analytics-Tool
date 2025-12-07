@@ -5,12 +5,10 @@
 # Cross‑Platform Financial Analytics Tool
 # Hi, I'm Pooya 👋
 
-- 💼 Accountant & Software Engineer in training
-- 📊 Expert in Iranian tax law & financial analytics
-- 💻 Building cross‑platform C++/Python projects with CI/CD
+- 💼 Software Engineer 
+- 📊 Expert in C++ and Pyhton Programming
+- 💻 Building template(training) cross‑platform C++/Python projects with CI/CD
 - 📈 Focused on performance benchmarking & professional project presentation
-- 🌍 Learning English for global collaboration
-
 
 
 ## Overview

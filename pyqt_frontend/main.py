@@ -1,5 +1,6 @@
 import sys
-sys.path.append(r"C:\Users\s.nejad\Desktop\cmake_project\financial_analytics_tool\build\Release\finanalytics.cp311-win_amd64.pyd")
+
+sys.path.append("/home/pooya/Desktop/Financial-Analytics-Tool/pyqt_frontend/finanalytics.cpython-313-x86_64-linux-gnu.so")
 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLineEdit, QLabel, QVBoxLayout, QWidget
 import finanalytics  # C++ backend module
@@ -9,6 +10,7 @@ import finanalytics  # C++ backend module
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.list = []
         self.setWindowTitle("Financial Analytics Tool")
 
         self.amount_input = QLineEdit(self)
@@ -35,8 +37,10 @@ class MainWindow(QMainWindow):
 
     def calculate_vat(self):
         amount = float(self.amount_input.text())
-        vat = finanalytics.calculateVAT(amount, 0.09)  # 9% VAT
-        self.result_label.setText(f"VAT Result: {vat:.2f}")
+        vat = finanalytics.CalculateVAT(amount, 0.09)  # 9% VAT
+        self.list.append(vat)
+        mean = finanalytics.Mean(self.list)
+        self.result_label.setText(f"VAT Result: {vat:.2f}\n Mean Result: {mean}")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

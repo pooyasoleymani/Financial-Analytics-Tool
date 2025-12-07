@@ -47,3 +47,5 @@ Test
 */.venv
 .venv
 .vscode
+venv
+docs

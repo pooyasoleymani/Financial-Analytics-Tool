@@ -19,7 +19,7 @@ include(CPack)
 set(CPACK_GENERATOR "ZIP;TGZ")
 set(CPACK_PACKAGE_NAME "Financial-Analytics-Tool")
 set(CPACK_PACKAGE_VERSION "1.0.0")
-set(CPACK_PACKAGE_CONTACT "pooya@example.com")
+set(CPACK_PACKAGE_CONTACT "pooyasoleyamaninejad@gmail.com")
 
 option(BUILD_TESTS "Build tests" ON)
 if(BUILD_TESTS)
@@ -28,7 +28,7 @@ if(BUILD_TESTS)
     add_subdirectory(${CMAKE_SOURCE_DIR}/cpp_backend/tests)
 endif()
 
-option(BUILD_BENCHMARKS "Build benchmarks" OFF)
+option(BUILD_BENCHMARKS "Build benchmarks" ON)
 if(BUILD_BENCHMARKS)
   add_subdirectory(${PROJECT_SOURCE_DIR}/cpp_backend/externals/benchmark)
   add_executable(bench_core ${CMAKE_SOURCE_DIRURCE_DIR}/cpp_backend/benchmarks/bench_core.cpp)
@@ -36,6 +36,7 @@ if(BUILD_BENCHMARKS)
 endif()
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/cpp_backend/externals/pybind11)
+SET(PYBIND11_PYTHON_VERSION "3.13")
 
 pybind11_add_module(
   finanalytics 
@@ -48,3 +49,4 @@ target_include_directories(
   ${PROJECT_SOURCE_DIR}/cpp_backend/include 
   ${PROJECT_SOURCE_DIR}/cpp_backend/externals/pybind11/include
   )
+
