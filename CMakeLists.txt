@@ -31,7 +31,7 @@ endif()
 option(BUILD_BENCHMARKS "Build benchmarks" ON)
 if(BUILD_BENCHMARKS)
   add_subdirectory(${PROJECT_SOURCE_DIR}/cpp_backend/externals/benchmark)
-  add_executable(bench_core ${CMAKE_SOURCE_DIRURCE_DIR}/cpp_backend/benchmarks/bench_core.cpp)
+  add_executable(bench_core ${CMAKE_SOURCE_DIR}/cpp_backend/benchmarks/bench_core.cpp)
   target_link_libraries(bench_core PRIVATE core benchmark)
 endif()
 
