@@ -39,3 +39,13 @@
 
 # debug information files
 *.dwo
+
+Test
+
+[Bb]uild
+*/venv
+*/.venv
+.venv
+.vscode
+venv
+docs

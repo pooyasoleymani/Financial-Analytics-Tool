@@ -1,3 +1,9 @@
 [submodule "externals/benchmark"]
 	path = externals/benchmark
 	url = https://github.com/google/benchmark
+[submodule "externals/Catch2"]
+	path = externals/Catch2
+	url = https://github.com/catchorg/Catch2
+[submodule "cpp_backend/externals/pybind11"]
+	path = cpp_backend/externals/pybind11
+	url = https://github.com/pybind/pybind11
